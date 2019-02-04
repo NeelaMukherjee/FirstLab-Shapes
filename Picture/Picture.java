@@ -16,6 +16,14 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Square win;
+    private Square treetrunk;
+    private Triangle tree;
+    private Square garage;
+    private Square gardoor;
+    
+    
+    
 
     /**
      * Constructor for objects of class Picture
@@ -34,6 +42,7 @@ public class Picture
         wall.moveVertical(80);
         wall.changeSize(100);
         wall.makeVisible();
+        //wall.changeColor("purple");
 
         window = new Square();
         window.changeColor("black");
@@ -49,10 +58,46 @@ public class Picture
 
         sun = new Circle();
         sun.changeColor("yellow");
-        sun.moveHorizontal(180);
+        sun.moveHorizontal(0);
         sun.moveVertical(-10);
         sun.changeSize(60);
         sun.makeVisible();
+        
+        treetrunk = new Square();
+        treetrunk.changeColor("Brown");
+        treetrunk.makeVisible();
+        treetrunk.moveHorizontal(125);
+        treetrunk.moveVertical(160);
+        
+        tree =new Triangle ();
+        tree.changeColor("green");
+        tree.moveHorizontal(150);
+        tree.moveVertical(45);
+        tree.changeSize(150, 50);
+        tree.makeVisible();
+        
+        win = new Square();
+        win.changeColor("black");
+        win.moveHorizontal(60);
+        win.moveVertical(100);
+        win.makeVisible();
+        
+        garage = new Square();
+        garage.changeColor("blue");
+        garage.makeVisible();
+        garage.changeSize(60);
+        garage.moveVertical (120);
+        garage.moveHorizontal(-55);
+        
+        gardoor =new Square();
+        gardoor.changeColor("black");
+        gardoor.moveHorizontal(-40);
+        gardoor.moveVertical(148);
+        gardoor.makeVisible();
+        
+        
+        
+        
     }
 
     /**
@@ -78,8 +123,11 @@ public class Picture
         {
             wall.changeColor("red");
             window.changeColor("black");
-            roof.changeColor("green");
+            roof.changeColor("blue");
             sun.changeColor("yellow");
+            treetrunk.changeColor("brown");
+            tree.changeColor("green");
+            //door.changeColor("black");
         }
     }
 
